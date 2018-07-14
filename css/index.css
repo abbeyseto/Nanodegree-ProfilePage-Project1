@@ -1,16 +1,20 @@
-html, body {
-  box-sizing: border-box;
-  height: 100%;
-  padding: 10px;
-  margin: 0px;
-}
-h1{
+#heading{
     font-size: 4vw;
+    text-align:right; 
+    margin-bottom: 0;
 }
-h3{
+#subHeading{
+    font-size: 2vw;
+    text-align:right;  
+    margin-top: 0;
+}
+.link{
+    font-size: 1.5vw;
+}
+.caption{
     font-size: 2vw;
 }
-hr{
+#line{
     width: 100%;
     border: 1.5px solid gray;
     align-items: right;
@@ -20,6 +24,9 @@ hr{
     height: 100%;
     display: grid;
     grid-gap: 1px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(1fr);
     grid-template-areas: 
@@ -47,9 +54,7 @@ hr{
     height: 100%;
     grid-area: sb;
 }
-.main {
-    grid-area: m;
-}
+
 .card {
    display: -webkit-flex;
     display: -ms-flexbox;
@@ -111,11 +116,15 @@ hr{
     grid-area: f;
 }
 
+/*for screens smaller or equal to 700px width*/
 @media screen and (max-width: 700px) {
 .container {
     height: 100%;
     display: grid;
     grid-gap: 1px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(1fr);
     grid-template-areas: 
@@ -128,12 +137,7 @@ hr{
         "s2 s2 s2 s2 s2 s2 s2 s2 s2 s2 s2 s2"
         "f f f f f f f f f f f f";
 }
-html, body {
-  box-sizing: border-box;
-  height: 100%;
-  padding: 10px;
-  margin: 0px;
-}
+
 .sidebar {
     display: flex;
     grid-area: sb;
@@ -152,11 +156,15 @@ html, body {
 }
 }
 
+/*for screens smaller or equal to 400px width*/
 @media screen and (max-width: 400px) {
 .container {
     height: 100%;
     display: grid;
     grid-gap: 1px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(1fr);
     grid-template-areas: 
@@ -168,12 +176,7 @@ html, body {
         "s2 s2 s2 s2 s2 s2 s2 s2 s2 s2 s2 s2"
         "f f f f f f f f f f f f";
 }
-html, body {
-  box-sizing: border-box;
-  height: 100%;
-  padding: 10px;
-  margin: 0px;
-}
+
 .sidebar {
     display: flex;
     grid-area: sb;
